@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css'; // Or any other base theme
+
+$background-color: #111;
+$primary-color: #0f0; // Neon green
+$secondary-color: #00f; // Blue
+$text-color: #eee;
+$accent-color: #ff0; // Yellow
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: 'Roboto', sans-serif; // Or a futuristic font
+  margin: 0;
+}
+
+.mat-toolbar {
+  background-color: darken($background-color, 10%);
+  color: $text-color;
+}
+
+.mat-form-field {
+  color: $text-color;
+
+  .mat-input-element {
+    color: $text-color;
+  }
+
+  .mat-form-field-label {
+    color: lighten($text-color, 20%);
+  }
+
+  .mat-form-field-underline {
+    background-color: $primary-color;
+  }
+}
+
+.mat-raised-button, .mat-stroked-button{
+    background-color: $primary-color;
+    color: $background-color;
+}
